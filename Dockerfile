@@ -13,3 +13,4 @@ RUN apt-get update && \
 	chown -R 33:33 /svndata
 COPY dav_svn.conf /etc/apache2/mods-available/dav_svn.conf
 COPY data /var/www/html/data
+RUN chown -R 33:33 /var/www/html
